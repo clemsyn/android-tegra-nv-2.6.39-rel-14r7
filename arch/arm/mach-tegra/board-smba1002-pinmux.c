@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-tegra/board-smba1002-pinmux.c
  *
- * Copyright (C) 2011 Eduardo José Tagle <ejtagle@tutopia.com>
+ * Copyright (C) 2011 Eduardo Josï¿½ Tagle <ejtagle@tutopia.com>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -239,7 +239,7 @@ static void tegra_gpio_config(struct tegra_gpio_table* tab, int size)
 
 static struct tegra_gpio_table gpio_table[] = {
 	{ .gpio = SMBA1002_BT_RESET,			.enable = true },
-	{ .gpio = SMBA1002_GPSMAG_DISABLE,	.enable = true },
+/*	{ .gpio = SMBA1002_GPSMAG_DISABLE,	.enable = true },*/
 	{ .gpio = SMBA1002_KEY_VOLUMEUP,		.enable = true },
 	{ .gpio = SMBA1002_KEY_VOLUMEDOWN,	.enable = true },
 	{ .gpio = SMBA1002_KEY_POWER,		.enable = true },
