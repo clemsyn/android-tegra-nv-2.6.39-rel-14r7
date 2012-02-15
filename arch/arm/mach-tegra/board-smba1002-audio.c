@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-tegra/board-smba1002-audio.c
  *
- * Copyright (C) 2011 Eduardo José Tagle <ejtagle@tutopia.com>
+ * Copyright (C) 2011 Eduardo Josï¿½ Tagle <ejtagle@tutopia.com>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -70,10 +70,10 @@ static struct tegra_audio_platform_data tegra_audio_pdata[] = {
 	[0] = {
 		.i2s_master		= true,		/* CODEC is slave for audio */
 		.dma_on			= true,  	/* use dma by default */
-#ifdef SMBA1002_48KHZ_AUDIO						
-		.i2s_master_clk = 48000,
-		.i2s_clk_rate 	= 12288000,
-#else
+//#ifdef SMBA1002_48KHZ_AUDIO						
+//		.i2s_master_clk = 48000,
+//		.i2s_clk_rate 	= 12288000,
+//#else
 		.i2s_master_clk = 44100,
 		.i2s_clk_rate 	= 11289600,
 #endif
@@ -120,7 +120,6 @@ static struct i2c_board_info __initdata smba1002_i2c_bus0_board_info[] = {
 
 static struct tegra_alc5623_platform_data smba1002_audio_pdata = {
         .gpio_spkr_en           = -2,
-        .gpio_hp_det            = SMBA1002_HP_DETECT,
 };
 
 static struct platform_device tegra_generic_codec = {
