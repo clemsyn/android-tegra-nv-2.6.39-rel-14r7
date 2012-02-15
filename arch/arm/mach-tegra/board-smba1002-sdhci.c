@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-tegra/board-smba1002-sdhci.c
  *
- * Copyright (C) 2011 Eduardo José Tagle <ejtagle@tutopia.com> 
+ * Copyright (C) 2011 Eduardo Josï¿½ Tagle <ejtagle@tutopia.com> 
  * Copyright (C) 2010 Google, Inc.
  *
  * This software is licensed under the terms of the GNU General Public
@@ -98,8 +98,8 @@ struct tegra_sdhci_platform_data smba1002_wlan_data = {
 //        .force_hs = 0,
 	.mmc_data = {
         	.register_status_notify = smba1002_wifi_status_register,
-		.embedded_sdio = &embedded_sdio_data0,
-		.built_in = 1,
+//		.embedded_sdio = &embedded_sdio_data0,
+//		.built_in = 1,
 	},
 	.cd_gpio = -1,
 	.wp_gpio = -1,
