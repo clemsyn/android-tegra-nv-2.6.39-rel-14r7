@@ -256,7 +256,7 @@ static struct tegra_gpio_table gpio_table[] = {
 	{ .gpio = SMBA1002_ENABLE_VDD_VID,	.enable = true },
 	{ .gpio = SMBA1002_SDHC_CD,			.enable = true },
 	{ .gpio = SMBA1002_SDHC_POWER,		.enable = true },
-	{ .gpio = SMBA1002_TS_IRQ,			.enable = true },
+//	{ .gpio = SMBA1002_TS_IRQ,			.enable = true },
 	{ .gpio = SMBA1002_TS_POWER,		.enable = true },
 	{ .gpio = SMBA1002_TS_RESET,		.enable = true },
 	{ .gpio = SMBA1002_WLAN_POWER,		.enable = true },
