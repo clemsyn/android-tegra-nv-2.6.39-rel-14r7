@@ -39,7 +39,7 @@ struct at168_i2c_ts_platform_data at168_pdata = {
 static struct i2c_board_info __initdata smba1002_i2c_bus0_touch_info_at168[] = {
 	{
 		I2C_BOARD_INFO("at168_touch", 0x5c),
-		.irq = TEGRA_GPIO_TO_IRQ(SMBA1002_TS_IRQ),
+		.irq = TEGRA_GPIO_TO_IRQ(SMBA1002_TS_RESET),
 		.platform_data = &at168_pdata,
 	},
 };
