@@ -66,6 +66,7 @@ static __initdata struct tegra_clk_init_table smba1002_clk_init_table[] = {
         { "i2s1", "pll_a_out0", 2822400, true}, /* i2s.0 */
         { "i2s2", "pll_a_out0", 11289600, true}, /* i2s.1*/
         { "cdev1", NULL, 0, true},
+        { "blink", "clk_32k",   32768,	true}, /* bluetooth */
 	{ NULL, NULL, 0, 0},
 };
 
