@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-tegra/board-smba1002.c
  *
- * Copyright (C) 2011 Eduardo José Tagle <ejtagle@tutopia.com>
+ * Copyright (C) 2011 Eduardo JosÃ© Tagle <ejtagle@tutopia.com>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -642,7 +642,7 @@ static void __init tegra_smba1002_init(void)
 	smba1002_uart_register_devices();
 	
 	/* Register SPI devices */
-	smba1002_spi_register_devices();
+	//smba1002_spi_register_devices();
 
 	/* Register GPU devices */
 	smba1002_gpu_register_devices();
@@ -654,10 +654,10 @@ static void __init tegra_smba1002_init(void)
 //	smba1002_jack_register_devices();
 
 	/* Register AES encryption devices */
-	smba1002_aes_register_devices();
+//	smba1002_aes_register_devices();
 
 	/* Register Watchdog devices */
-	smba1002_wdt_register_devices();
+//	smba1002_wdt_register_devices();
 
 	/* Register all the keyboard devices */
 	smba1002_keyboard_register_devices();
@@ -780,6 +780,9 @@ MACHINE_START(LEGACY, "legacy")
 	.reserve		= tegra_smba1002_reserve,
 	.fixup			= tegra_smba1002_fixup,
 MACHINE_END
+
+
+
 
 
 
