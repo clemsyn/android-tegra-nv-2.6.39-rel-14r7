@@ -1,5 +1,7 @@
 /*
  * linux/arch/arm/mach-tegra/pinmux-t2-tables.c
+/*
+ * linux/arch/arm/mach-tegra/pinmux-t2-tables.c
  *
  * Common pinmux configurations for Tegra 2 SoCs
  *
