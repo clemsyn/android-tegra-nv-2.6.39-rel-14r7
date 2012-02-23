@@ -1,7 +1,7 @@
 /*
  * arch/arm/mach-tegra/board-smba1002-uart.c
  *
- * Copyright (C) 2011 Eduardo José Tagle <ejtagle@tutopia.com>
+ * Copyright (C) 2011 Eduardo Josï¿½ Tagle <ejtagle@tutopia.com>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -48,11 +48,11 @@
 
 
 static struct platform_device *smba1002_uart_devices[] __initdata = {
-	&tegra_uarta_device,
-	&tegra_uartb_device,
+	//&tegra_uarta_device,
+	//&tegra_uartb_device,
 	&tegra_uartc_device,
-	&tegra_uartd_device,
-	&tegra_uarte_device,
+//	&tegra_uartd_device,
+//	&tegra_uarte_device,
 };
 
 int __init smba1002_uart_register_devices(void)
