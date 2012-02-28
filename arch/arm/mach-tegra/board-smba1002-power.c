@@ -2,7 +2,7 @@
  * Copyright (C) 2010 NVIDIA, Inc.
  *               2010 Marc Dietrich <marvin24@gmx.de>
  *               2011 Artem Makhutov <artem@makhutov.org>
- *               2011 Eduardo José Tagle <ejtagle@tutopia.com>
+ *               2011 Eduardo Josï¿½ Tagle <ejtagle@tutopia.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -714,7 +714,7 @@ int __init smba1002_power_register_devices(void)
 	pmc_ctrl = readl(pmc + PMC_CTRL);
 	writel(pmc_ctrl | PMC_CTRL_INTR_LOW, pmc + PMC_CTRL);
 
-	err = i2c_register_board_info(3, smba1002_regulators, 1);
+	err = i2c_register_board_info(4, smba1002_regulators, 1);
 	if (err < 0) 
 		pr_warning("Unable to initialize regulator\n");
 
